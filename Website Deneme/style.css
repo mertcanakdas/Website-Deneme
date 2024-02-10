@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bggradient.jpg');
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* tam ortalar*/
+
+}
+
+/* header start */
+header {
+    height: 100px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.08);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    color: rgb(176, 216, 0);
+    transition: 0.3s;
+}
+
+nav .menu {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    column-gap: 50px;
+}
+
+nav .menu .menu-button{
+    text-decoration: none;
+    color: rgb(176, 216, 0);
+    background: rgb(114, 252, 72, 0.1);
+    border-radius: 56px;
+    padding: 12px 24px;
+}
+
+nav .menu .menu-button:hover{
+    color: white;
+    background-color: rgb(176, 216, 0);
+    transition: 0.4s;
+}
+
+/* header end */
+
+/* section start */
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   column-gap: 25px
+    
+}
+.content .links a{
+    background-color: white;
+    border-radius: 56px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.content .links a:hover{
+    background-color: rgb(176, 216, 0);
+    color: white;
+}
+/* section end */
+
+/* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    nav .menu .menu-button{
+        display: none;
+    }
+    .content {
+        padding: 50px;
+        justify-content: center;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content p{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .content .links{
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+    .content .links a{
+        padding: 14px;
+        width: 90%;      
+    }
+}
+/* responsive end */
